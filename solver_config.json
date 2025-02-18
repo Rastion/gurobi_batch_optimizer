@@ -1,0 +1,16 @@
+{
+    "entry_point": "gurobi_batch_optimizer:GurobiBatchOptimizer",
+    "default_params": {
+        "time_limit": 300
+    },
+    "optimizer_type": "MIP",
+    "description": "Batch scheduling optimizer using Gurobi.",
+    "compatible_problems": ["BatchScheduling"],
+    "parameters": {
+        "time_limit": {
+            "type": "int",
+            "description": "Maximum optimization time in seconds"
+        }
+    },
+    "requirements": ["gurobipy", "qubots"]
+}
