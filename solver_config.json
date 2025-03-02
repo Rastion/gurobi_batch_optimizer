@@ -1,16 +1,23 @@
 {
     "entry_point": "gurobi_batch_optimizer:GurobiBatchOptimizer",
     "default_params": {
-        "time_limit": 300
+        "time_limit": 5
     },
-    "optimizer_type": "MIP",
+    "creator": "Rastion",
+    "type": "optimizer",
+    "optimizer_name": "Gurobi (free version) batch scheduling optimizer",
     "description": "Batch scheduling optimizer using Gurobi.",
-    "compatible_problems": ["BatchScheduling"],
+    "compatible_problems": ["Rastion/batch_scheduling"],
     "parameters": {
         "time_limit": {
             "type": "int",
             "description": "Maximum optimization time in seconds"
         }
     },
-    "requirements": ["gurobipy", "qubots"]
+    "requirements": ["gurobipy", "qubots"],
+    "keywords": [
+      "exact",
+      "MIP",
+      "gurobi"
+    ]
 }

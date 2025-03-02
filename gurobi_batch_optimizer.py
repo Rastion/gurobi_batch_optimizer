@@ -12,7 +12,7 @@ class GurobiBatchOptimizer(BaseOptimizer):
     applies any precedence constraints. The objective is to minimize the makespan.
     """
     
-    def __init__(self, time_limit=300):
+    def __init__(self, time_limit=5):
         self.time_limit = time_limit
 
     def optimize(self, problem, initial_solution=None, **kwargs):
